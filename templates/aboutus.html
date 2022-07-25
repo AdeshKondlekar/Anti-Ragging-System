@@ -1,0 +1,50 @@
+{% include 'base.html' %}
+  {% load static %} 
+
+{% comment %} {% block title %}About{% endblock title %} {% endcomment %}
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="{%  static  'css/styling.css'  %}">
+    </head>
+    {% block body %}
+    <body class="body">
+    {% csrf_token %}
+
+<div class="header">
+        <div class="main">
+            <h1><u>About Us</u></h1>
+            <p style="font-size: 22px">
+            Ragging constitutes one or more of any of the following acts:
+<br>
+a) Any conduct by any student or students whether by words spoken or
+written or by an act which has the effect of teasing, treating or handling
+with rudeness a fresher or any other student.
+<br>
+b) Indulging in rowdy or in disciplined activities by any student or students
+which causes or is likely to cause annoyance, hardship, physical or
+psychological harm or to raise fear or apprehension thereof in any fresher
+or any other student.
+<br>
+c) Asking any student to do any act which such student will not in the
+ordinary course do and which has the effect of causing or generating a
+sense of shame, or torment or embarrassment so as to adversely affect the
+physique or psyche of such fresher or any other student.
+            </p>
+        </div>
+    </div>
+<br>
+ <div class="demo-wrap">
+  <img
+    class="demo-bg"
+    src="static/2.png"
+    alt=""
+  >
+  
+</div>
+  
+  
+{% comment %} </div>
+    <footer class='text-center text-light bg-dark'>
+      All rights reserved.©
+    </footer> {% endcomment %}
+{% endblock body %}
